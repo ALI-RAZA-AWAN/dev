@@ -12,20 +12,26 @@ header
 header close
 
 main
+    
       section
       /section
+      
       section
            aside
            /aside
       /section
+      
       section
            article
            /article
            article
            /article
         /section
+        
 /main
+
 footer
-/footer        
+/footer     
+
 /body   
 /html
