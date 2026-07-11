@@ -1,0 +1,89 @@
+
+// . for class and # for id
+// if not assign then the position property is static
+// absolute means from top 
+// and we have to use position: relative; in box so heading se top of its box only
+// then we use top left right bottom
+// UNITS-------------------------------------------------
+// WHEN YOU WANNA TAKE HALF OR FULL OR 4 ONE PART OF SCREN CHOOSE %
+// OTHERWISE IF YOU CHANGE A LITTLE BIT SPACE THEN CHOOSE PX 
+
+// img---------------------------------------------
+//first backgroundimage then background-size: cover then background-position: choose the part 
+// of image you wanna see like center, top or bottom
+
+
+// positions-------------------------------------------
+// absolute mai woh upper a jaye ga or uske niche wala ghaib
+// relative usse banate ha jiske andar usse rakhna hota ha maslan
+// aik box ko car mai bhi rakhna ha par utha kr tu car ko relative baneye ge 
+
+// flexbox---------------------------------------
+pehle by d=defualt woh verticle mai dabe ate ha or agar parent wale mai display:flex likh de 
+tu woh sare horizontal arrange ho jate ha
+// width pai kam krne keliye justify-content or height keliye align-items
+ or display inke parent ko kahe ge jiske andr sare yeh pare hoge
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    
+
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+
+.logo{
+    color:red;
+}
+
+ul{list-style: none;
+text-align: center;
+}
+ul li a{
+    text-decoration: none;
+    
+    
+
+
+}
+ul li a:hover{
+    color:red;
+    font-size: larger;
+}
+#projects{
+    background-color: blue;
+    width: 500px;
+    margin:auto;
+
+    border: 5px red solid ;
+    padding:30px ;
+}
+
+#contact{
+    background-color: bisque;
+    width: 500px;
+    height: 300px;
+    line-height: 3em;
+    margin:auto;
+    border: 5px dotted rosybrown;
+    margin-top: 20px;
+    text-align: center;
+
+
+
+}
+
+.form{
+    padding: 20px;
+}
+
+footer{
+    position: fixed;
+    bottom:0%;   
+    
+}

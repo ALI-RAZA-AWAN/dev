@@ -1,0 +1,95 @@
+ <!-- for image and also for positions -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       *{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    
+
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    /* background-image: url(/1.png);
+    background-size: cover;
+    background-position: top; */
+}
+
+/* for absolute */
+.car1{
+    width: 100px;
+    height: 120px;
+    background-color: red;
+ 
+}
+.car2{
+    width: 120px;
+    height: 140px;
+    background-color: rgb(26, 209, 148);
+       position: absolute;
+}
+.car3{
+    width: 140px;
+    height: 160px;
+    background-color: rgb(25, 0, 255);
+}
+ /* for relative  */
+.box{
+
+    margin-top: 100px;
+     width: 140px;
+    height: 160px;
+    background-color: rgb(255, 115, 0);
+    position: relative;
+}
+.chota{
+     width: 40px;
+    height: 60px;
+    background-color: rgb(0, 255, 98);
+    position: absolute;
+    left: 40%;
+}
+/* for flexbox */
+
+.dabba{
+    margin-top: 100px;
+     width: 500px;
+    height: 500px;
+    background-color: rgb(171, 177, 204);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pehla{ width: 100px;
+    height: 100px;
+    background-color: rgb(45, 207, 40);}
+.dosra{ width: 100px;
+    height: 100px;
+    background-color: rgb(153, 25, 63);}
+.tesra{ width: 100px;
+    height: 100px;
+    background-color: rgb(26, 58, 202);}
+    </style>
+</head>
+<body>
+    <div class="car1"></div>
+    <div class="car2"></div>
+    <div class="car3"></div>
+    <div class="box">
+        <div class="chota"></div>
+    </div>
+
+    <div class="dabba">
+        <div class="pehla"></div>
+        <div class="dosra"></div>
+        <div class="tesra"></div>
+    </div>
+</body>
+</html>
