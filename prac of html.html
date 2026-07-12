@@ -73,58 +73,11 @@
             position: relative;
         }
 
-        @media (max-width:600px) {
-            .nav {
-                height: 60px;
-                width: 100%;
-
-            }
-
-            .nav h3 {
-                font-size: 6vw;
-            }
-
-            .nav2 h3 {
-                display: block;
-            }
-
-            .nav h4 {
-                display: none;
-            }
-
-            .content {
-                height: calc(100% - 60px);
-
-                flex-direction: column;
-            }
-
-            .left {
-                width: 100%;
-                height: 50%;
-            }
-
-            .right {
-                width: 100%;
-                height: 50%;
-
-            } */
-
-            .left h3 {
-                font-size: 15vw;
-
-            }
-
-            .left p {
-                font-size: 4vw;
-                margin-top: 5vw;
-                margin-bottom: 7vw;
-            }
-        }
 
         .left {
             height: 100%;
             width: 55%;
-            //background-color: blueviolet; 
+            /* background-color: blueviolet;  */
             padding: 5vw 4vw;
 
         }
@@ -170,6 +123,51 @@
             width: 90%;
             margin-top: 10%;
         }
+        /* 1. This part handles the mobile layout (when screen is narrow) */
+@media (max-width: 600px) {
+    .nav {
+        height: 60px; /* Use a fixed height for mobile */
+    }
+    
+    .nav h4 {
+        display: none; /* Hide the menu links on mobile */
+    }
+    .nav h3{
+        font-size: 6vw;
+    }
+    .nav2 h3 {
+        display: block; /* Show a menu icon/text on mobile */
+        font-size: 5vw;
+        
+    }
+
+    .content {
+        flex-direction: column; /* Stack left and right vertically */
+    }
+
+    .left, .right {
+        width: 100%; /* Force full width on mobile */
+        height: auto;
+    }
+
+    .left h3 {
+        font-size: 10vw; /* Adjust font size for smaller screens */
+    }
+    .left p{
+        font-size: 3vw;
+        color: #666;
+        width: 80%;
+        margin-top: 4vw;
+        margin-bottom: 4vw;
+    }
+    .content button{
+        padding:2vw 6vw;
+        font-size: 4vw;
+    }
+    
+}
+
+        
     </style>
 
 </head>
@@ -177,13 +175,13 @@
 <body>
     <div class="main">
         <div class="nav">
-            <h3>SIGNAL</h3>
+            <h3>LOGO</h3>
             <div class="nav2">
                 <h4><a href="">Home</a></h4>
                 <h4><a href="">Services</a></h4>
                 <h4><a href="">Contact </a></h4>
                 <h4><a href="">Account </a></h4>
-                <h3>Icons</h3>
+                <h3>+</h3>
             </div>
         </div>
         <div class="content">
@@ -191,7 +189,7 @@
                 <h3>You have been <span>choosen</span> for making the History. </h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem molestiae asperiores temporibus vel
                     nobis harum aliquam illo impedit commodi quas.</p>
-                <button>Hit Me!</button>
+                <button>Hit Me !</button>
             </div>
             <div class="right">
                 <img src="/2.png" alt="">
