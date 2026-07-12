@@ -24,6 +24,8 @@ tu woh sare horizontal arrange ho jate ha
 // width pai kam krne keliye justify-content or height keliye align-items
  or display inke parent ko kahe ge jiske andr sare yeh pare hoge
 
+ // calc(100% - 100px)
+
 *{
     margin:0px;
     padding:0px;
