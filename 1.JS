@@ -64,13 +64,27 @@ var b=[...a] choose those braces which one is we copy also change in b not in a
 // Truthy: Besides all of the Falsy values, everything is Truthy. 
 // 13. forEach act as a loop, which iterate over each value in an array. And because it iterate over each value in array, you can perform all of the operation related to array & iteration, like adding the original value with another value etc. 
 // One thing to remember is forEach make changes in the array values, but the original array values never get changed. It creates its own temporary copy to perform the operations. 
-// 
+// var a=[1,3,3];  a.forEach(function acd(val){ console.log(val+2)}); it will change every val but not in real array
 
 
 // 14. forin act as a loop, which iterate over each value in an object. 
+// var obj ={name:"ali",age:29};
+// for(var key in obj){console.log(key)} this will print the object props only not their values 
+// so for that write console.log(obj[key]); to write both console.log(key, obj[key]);
+// to delete  you write delete.a.name;
+
+
 
 // 15. do-while: firstly perform the operation then check the condition.
+
 // 16. Callback function: It basically sets an time limit, and after that time limit a particular task or function gets executed only if the task inside that function is completed otherwise it will keep waiting until the task inside that function is completed, and after it’s completed it will basically print it out on the screen.
+// setTimeOut(function(){console.log("hi")},2000); here 2000millisec = 2 sec
 // 17. First class functions: You can store functions inside an variable.
+// var a = function(){};
+
+//also give funct as argument in func
+// function abcd(a){a();}  abcd(function(){console.log("HI");})
+  
 // 18. Arrays in JavaScript are technically Objects. Where objects key acts as arrays index and it’s value as arrays value. And because of this property, you can create an negative index in array and assign it a value. 
+//Array.isArray([])->True   Array.isArray({})->False to check it object or array
 // 19. To delete an obj, write delete.keyName;
