@@ -23,8 +23,17 @@ pehle by d=defualt woh verticle mai dabe ate ha or agar parent wale mai display:
 tu woh sare horizontal arrange ho jate ha
 // width pai kam krne keliye justify-content or height keliye align-items
  or display inke parent ko kahe ge jiske andr sare yeh pare hoge
+ flex wrap and flex direction  
+ horizontal called as main axis and verticle called as cross axis
 
  // calc(100% - 100px)
+
+
+ vw viewport width screen according
+ vh viewport height also screen based
+
+ 1em means exact the fontsize of parent and 2 means double
+/* @media (max-width:600px){} */
 
 *{
     margin:0px;
