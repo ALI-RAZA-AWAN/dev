@@ -2,7 +2,9 @@
 // MAI 1- VARIABLES 2- FUNC INSIDE THAT PARENT FUNC 3- LEXICAL ENVIRONMENT OF THAT FUNC (ITS BASIACLLY TELL WHICH THINGS HAVE ACCESS AND WHICH NOT)
 
 
-/* 
+/*
+<script src="script.js"></script>
+
 JS WORDS VS KEYWORDS
 var,  const and let 
 
@@ -136,15 +138,21 @@ DOM document object model
 4 pillars 
  1- selection of an element 
  document.querySelector("h1") for id (".box") for class (#box)
+ document.quesrySelectorAll("h1") 
+ document.getElementById("box")
+ document.getElementByClassName("box")
 
  2- changing html
  let a = document.querySelector("h1");
- a.innerHTML ="Changed"
+ a.innerHTML ="Changed" also ="<h1>ALi</h1>" this make a new h1 tag and just write Ali 
+ but textcontent is for only change text it will write exact <h1>ALi</h1>
 
  3- changing CSS 
  a.style.color="red";   in js backgroundColor (camel cass) is valid instead of background-color
 
  4- event Listner
- 
+
+ a.addEventListner("click", function(){}) 
+
 
 */
