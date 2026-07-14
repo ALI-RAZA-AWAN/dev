@@ -88,3 +88,63 @@ var b=[...a] choose those braces which one is we copy also change in b not in a
 // 18. Arrays in JavaScript are technically Objects. Where objects key acts as arrays index and it’s value as arrays value. And because of this property, you can create an negative index in array and assign it a value. 
 //Array.isArray([])->True   Array.isArray({})->False to check it object or array
 // 19. To delete an obj, write delete.keyName;
+
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////
+/*
+ASYNC YOU HAVE DO THESE TASKS PARALLEL DONT WAIT FOR ANYONE COMPLETION  LIKE AXIOS, FETCH , XMLHTMLREQUEST, PROMISES, setTimeOut, setInterval
+
+
+SYNC YOU HAVE DONE FIRST THEN GO FOR OTHER TASK
+
+so all the sync tasks are going in  main stack and async in side stack then 
+main stack complete its task and side stack send its tasks in main inorder to execute
+
+js is not multithreading it is singlethreading but it fastly doing two tasks like 1 ka part phir 2 phir 1 ka part so fast switching ke hame lagta ha multithreading ho rahi ha
+
+jb hm async ka code likhte ha tu uska response ata ha (then/catch, async/await, callbacks)
+
+promises: catch and then
+
+var a= new promises(res,rej){
+if(true){return res("hi");
+else return rej("bye");
+}}
+a.then(function(data){
+console.log(data);})
+a.catch(function(data){
+console.log(data);})
+
+make a promise if its true then run then otherwise catch
+
+async and await----------------------
+writing async code we use then and catch but we have another option async await
+
+async function add(){
+let raw= await fetch('sdfddg');  write async to its parent function 
+let ans= await raw.json(); if not write await it will become sync and run before fetch which give error 
+console.log(ans); it will auto wait for ans to get data for display
+}
+
+DOM document object model
+
+4 pillars 
+ 1- selection of an element 
+ document.querySelector("h1") for id (".box") for class (#box)
+
+ 2- changing html
+ let a = document.querySelector("h1");
+ a.innerHTML ="Changed"
+
+ 3- changing CSS 
+ a.style.color="red";   in js backgroundColor (camel cass) is valid instead of background-color
+
+ 4- event Listner
+ 
+
+*/
