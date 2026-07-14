@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request</title>
+    <style>
+        *{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    
+
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightseagreen;
+}
+.box{  
+    height: 500px;
+    width: 300px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: white;
+    border-radius:30px;
+padding: 12px 12px;
+ 
+}
+.pic{
+    width: 100%;
+    height: 60%;
+    background-image:url(/dev.JPG);
+    background-size: cover;
+    background-position: center;
+    border-radius:30px;
+    
+}
+.text{
+    width: 100%;
+    height: 40%;
+    background-color: rgb(255, 255, 255);
+    color: lightseagreen;
+    border-radius:30px;
+    text-align: center;
+    line-height: 3.5em;
+}
+.text h1{
+    color: red;
+    font-size: 2vw;
+}
+button{
+    background-color: rgb(255, 255, 255);
+    color: rgb(12, 12, 12);
+    padding: 8px 13px;
+    border: 2px solid lightblue;
+    background-color: lightblue;
+    border-radius: 12px;
+    
+}
+button:hover{
+    padding: 10px 15px;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="pic"></div>
+        <div class="text">
+            <h2>Osama bin Laden</h2>
+            <h1>Strangers</h1>
+            <button>Make Friends</button>
+        </div>
+    </div>
+
+    <script>
+        let btn= document.querySelector("button");
+        let text =document.querySelector("h1");
+        let flag=0;
+        btn.addEventListener("click", function(){
+           if(flag==0){
+            text.innerHTML="Friends";
+            btn.innerHTML="Remove";
+            text.style.color="green";
+            flag=1;}
+            else{
+                text.innerHTML="Strangers";
+                btn.innerHTML="Make Friends";
+                  text.style.color="red";
+                flag=0;
+            }
+
+        })
+    </script>
+</body>
+</html>
