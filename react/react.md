@@ -23,6 +23,9 @@ so we use return'(\<div>\<h1>\</h1>\<h1>\</h1>\</div>)
 # variables create and use ---------------
  const a=10;
  \<h1>hello {a}\</h1>
+ but these are not useful we go for  usestate hook and make variables in that way
+ ### const[varname,function to chnage its value] = useState(initialValue);
+### const[first,setFirst]=useState(10);
 
 # functions----------------------------------
 write all functions under the function app
@@ -35,3 +38,18 @@ const abs=()=>{
 \<button onclick={abs}>\</button> 
 
 # bt here you do it wrong you cant direct interact with DOM ask react to deal with it and also it has virtual doms. Here the concepts of HOOKS came.
+
+# hooks
+are special type of functions
+
+# useState----------
+ ### const[varname,function to chnage its value] = useState(initialValue);
+### const[first,setFirst]=useState(10);
+now chnage the name through function
+const[name,setName]=usestate("ALI");
+const changeName= ()=>{
+    setName("Umar");
+}
+return(\<h1>hello {name}\</h1>
+\<button onclick={changeName}>\</button> 
+)
