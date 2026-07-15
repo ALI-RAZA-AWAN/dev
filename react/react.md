@@ -17,8 +17,8 @@ function app(){
 export default app;
 
 so in function we cant return 2 things like 
-'return'(<h1></h1>  <h1></h1>)'' wrong 
-so we use return'(<div><h1></h1><h1></h1></div>)' 
+'return'(\<h1>\</h1>  \<h1>\</h1>)'' wrong 
+so we use return'(\<div>\<h1>\</h1>\<h1>\</h1>\</div>) 
  
 # variables create and use ---------------
  const a=10;
