@@ -16,12 +16,13 @@ function app(){
 }
 export default app;
 
-so in function we cant return 2 things like return(h1 /h1   h1 /h1) wrong
-so we use return(div h1 /h1 h1 /h1 /div>) 
+so in function we cant return 2 things like 
+<!-- return(<h1></h1>  <h1></h1>) wrong -->
+<!-- so we use return(<div><h1></h1><h1></h1></div>)  -->
  
 # variables create and use ---------------
  const a=10;
- h1 hello {a} /h1
+ <h1>hello {a}</h1>
 
 # functions----------------------------------
 write all functions under the function app
@@ -30,7 +31,7 @@ let name="ali";
 const abs=()=>{
     name="umar"
  }
-<pre>{<button onclick={abs}></button>}</pre>
 
+<!-- <button onclick={abs}></button> -->
 
 # bt here you do it wrong you cant direct interact with DOM ask react to deal with it and also it has virtual doms. Here the concepts of HOOKS came.
