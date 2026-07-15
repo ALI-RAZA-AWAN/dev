@@ -147,6 +147,8 @@ DOM document object model
  a.innerHTML ="Changed" also ="<h1>ALi</h1>" this make a new h1 tag and just write Ali 
  but textcontent is for only change text it will write exact <h1>ALi</h1>
 
+ document.createElement('h1');
+
  3- changing CSS 
  a.style.color="red";   in js backgroundColor (camel cass) is valid instead of background-color
 
