@@ -53,3 +53,19 @@ const changeName= ()=>{
 return(\<h1>hello {name}\</h1>
 \<button onclick={changeName}>\</button> 
 )
+
+## forms
+
+\<form>\<input value={ name of var } type="text" >\</input> \</form>
+
+the main issue is when you submit the form it auto reload the page which is trouble so 
+when you write submit function also use e as argument and write
+## const submit=(e)=>{ e.preventDeafult();}
+## e.target (for target the input in which we write)
+## e.target.value (get the value which we write in input field)
+
+# EVENT LISTNERS
+
+## onChange={()=>{}}  this usee in input 
+## onSubmit={()=>{}}  this one for from submit btn
+## onClick ={()=>{}} this one for 

@@ -1,4 +1,5 @@
-*{
+@import "tailwindcss";
+/* *{
     margin:0px;
     padding:0px;
     box-sizing:border-box;
@@ -11,4 +12,4 @@ html, body{
     background-color: black;
     color: antiquewhite;
     font-size: 3vw;
-}
+} */
