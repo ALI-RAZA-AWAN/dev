@@ -1,14 +1,15 @@
 import { useState } from "react";
 
 function app(){
-  const [name,setName]=useState("Ali");
-  const chnagename=()=>{
-    setName("Umar");
-  }
+  const [name,setName]=useState("");
+ 
   return (
     <div>
-      <h1>My name is {name}</h1>
-      <button onClick={chnagename}>Change name</button>
+    <form onSubmit={(e)=>{e.preventDefault(); console.log(name); setName("");
+    }}>
+      <input placeholder="Enter your name" className="px-4 py-3 rounded text-ml m-5" type="text" value={name} onChange={(e)=>{ setName(e.target.value); }} />
+      <button className=" px-4 py-3 text-white bg-emerald-600 rounded font-semibold"  >Submit</button>
+    </form>
     </div>
   )
 }
