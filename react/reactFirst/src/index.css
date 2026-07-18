@@ -1,5 +1,5 @@
 @import "tailwindcss";
- *{
+ /* *{
     margin:0px;
     padding:0px;
     box-sizing:border-box;
@@ -16,24 +16,23 @@ html, body{
     justify-content: center;
     
 } 
-/* Style for the input field normally */
+
 input {
   padding: 10px;
   border: 2px solid #ccc;
   border-radius: 5px;
-  transition: border-color 0.3s ease; /* Makes the border color change smoothly */
+  transition: border-color 0.3s ease; 
 }
 
-/* Style for the input field when you click/focus on it */
 input:focus {
-  outline: none; /* Removes the default browser blue outline */
-  border-color: #007bff; /* Change this to your preferred color */
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Optional: Adds a subtle glow */
+  outline: none; 
+  border-color: #007bff; 
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
 }
 button{
     padding: 4px 4px;
 }
-/* Style for the button */
+
 button {
   padding: 10px 20px;
   margin-left: 10px;
@@ -45,12 +44,12 @@ button {
   transition: background-color 0.3s ease, transform 0.1s ease;
 }
 
-/* Style for when you hover over the button */
+
 button:hover {
   background-color: #0056b3;
 }
 
-/* Style for when you click/press the button */
+
 button:active {
-  transform: scale(0.98); /* Slightly shrinks the button on click */
-}
+  transform: scale(0.98); 
+} */

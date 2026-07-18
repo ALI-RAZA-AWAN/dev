@@ -68,4 +68,14 @@ when you write submit function also use e as argument and write
 
 ## onChange={()=>{}}  this usee in input 
 ## onSubmit={()=>{}}  this one for from submit btn
-## onClick ={()=>{}} this one for 
+## onClick ={()=>{}} this one for BTN
+
+
+## TWO WAY BINDING -
+IT MEANS THE STATE CHANGE THE UI WHENEVER CHANGES OCCUR AND VICE VERSA
+
+## COMPONENTS IN REACT
+fragments are the empty tags in which we did our work
+\<> \<h1>hello\</h1>\<h1>hi\</h1> \</> 
+also the name of component is always start with capital letter like Header.jsx
+then import in file like import Header from './component/Header.jsx'; then use it like /<Header/>
