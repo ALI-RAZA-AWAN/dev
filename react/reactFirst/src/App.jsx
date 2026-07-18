@@ -1,12 +1,13 @@
 import { useState } from "react"
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 function app(){
   const [name,setName]=useState("");
  
   return (
 
      <>
-     <Navbar/>
+     <Navbar/> <Footer/>
      </>
 
 
