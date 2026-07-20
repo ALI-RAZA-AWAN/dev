@@ -64,6 +64,14 @@ when you write submit function also use e as argument and write
 ## e.target (for target the input in which we write)
 ## e.target.value (get the value which we write in input field)
 
+\ <div>
+    // \<form onSubmit={(e)=>{e.preventDefault(); console.log(name); setName("");
+    // }}>
+    //   \<input placeholder="Enter your name" className="px-4 py-3 rounded text-ml m-5" type="text" value={name} onChange={(e)=>{ setName(e.target.value); }} />
+    //   \<button className=" px-4 py-3 text-white bg-emerald-600 rounded font-semibold"  >Submit \</button>
+    // \</form>
+    // \</div>
+
 # EVENT LISTNERS
 
 ## onChange={()=>{}}  this usee in input 
@@ -79,3 +87,8 @@ fragments are the empty tags in which we did our work
 \<> \<h1>hello\</h1>\<h1>hi\</h1> \</> 
 also the name of component is always start with capital letter like Header.jsx
 then import in file like import Header from './component/Header.jsx'; then use it like /<Header/> we can add component inside a component.
+
+## passing data through component 
+\  <Card user={user} />
+inside card component card=(props)=>{} here props.user is the value we pass so use it.
+
