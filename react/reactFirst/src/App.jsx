@@ -2,6 +2,7 @@ import { useState } from "react"
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Card from './components/Card'
+import Getdata from './components/Getdata'
 function app(){
   const [name,setName]=useState("");
 
@@ -51,13 +52,24 @@ function app(){
   return (
 
      <>
-     <Navbar/> <div className=" absolute bg-cyan-500">
+     <Navbar/> 
+      <Getdata/> 
+      
+
+
+
+
+
+
+
+     {/* for card display      */}
+     {/* <div className=" absolute bg-cyan-500">
       
       {users.map(function(elem, keyx){
         return <Card key={keyx} name={elem.name} age={elem.age} city={elem.city} prof={elem.profession} photu={elem.profile_pic}/>
       })}
       
-      </div> 
+      </div>  */}
      </>
 
 
