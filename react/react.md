@@ -92,3 +92,7 @@ then import in file like import Header from './component/Header.jsx'; then use i
 \  <Card user={user} />
 inside card component card=(props)=>{} here props.user is the value we pass so use it.
 
+
+## the map function to grab data from list 
+
+users.map(function(elem){ return \<h1>{elem.age}\</h1>})
