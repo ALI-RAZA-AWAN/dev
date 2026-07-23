@@ -94,5 +94,14 @@ inside card component card=(props)=>{} here props.user is the value we pass so u
 
 
 ## the map function to grab data from list 
+write it in curly braces{}
+{users.map(function(elem){ return \<h1>{elem.age}\</h1>})} 
+or
+{users.map(function(elem, idx){ return \<h1>key={idx} age={elem.age}\</h1>})}
 
-users.map(function(elem){ return \<h1>{elem.age}\</h1>})
+
+## axios for fetch data from api 
+to get data we use this syntax
+const getdata =async ()=>{const response=await axios.get('http link');
+const data= response.data; console.log(data); or setData(response.data) }
+### then use map to show the data
