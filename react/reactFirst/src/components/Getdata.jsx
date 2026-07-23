@@ -16,7 +16,8 @@ const Getdata =()=>{
         <div className="p-5 mt-5 text-white bg-gray-950">
           {data.map(function(elem, idx){
             return <div key={idx} className=" bg-gray-50 text-black flex items-center justify-between px-7 py-6 rounded mb-3">
-                
+                <img className="h-40" src={elem.download_url} alt="phat gai" />
+                <h1>{elem.author}</h1>
                  </div>
           })}
         </div>
