@@ -104,4 +104,16 @@ or
 to get data we use this syntax
 const getdata =async ()=>{const response=await axios.get('http link');
 const data= response.data; console.log(data); or setData(response.data) }
-### then use map to show the data
+#### then use map to show the data
+
+# use effect lifecycle  method
+when the page load the things in useeffect run
+#### syntax
+useEffect(()=>{
+    getData()
+}, []) 
+
+
+# react-toastify  
+used for popup messages a web where it gives you the code
+ 
