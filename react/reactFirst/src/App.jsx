@@ -51,9 +51,14 @@ function app(){
  
   return (
 
-     <> <Navbar/>
+     <> 
+     
+     
+     
+     
+     {/* <Navbar/>
       <Getdata/> 
-      
+       */}
       
 
 
