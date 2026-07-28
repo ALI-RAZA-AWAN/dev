@@ -13,7 +13,7 @@ function Navbar(){
       
         </div></nav>)}
       
-   
+  // not using the a href because its refresh the whole page 
     
 
 export default Navbar;
