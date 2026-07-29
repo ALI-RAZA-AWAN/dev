@@ -52,3 +52,18 @@ app.get('/', function(req,res){
 })
 
 app.listen(3000);
+
+## package express , nodemon -g  (here -g means global install in windows if not -g then in that specific folder)
+
+and now if you write nodemon ./filename instead of node ./filename 
+you don't restart the server after changes. if gives error then write npx at start.
+
+## Middleware
+ ek esa function ha jo kisi bhi route se pehle chalta ha jiska maqsad ap ka route chalne se pehle agar ap koi kam karana chahate hu tu woh chale ga
+ jese route pe chalne se pehle print karo or sath mai hit counter increase karo
+ ### yehni jo route chalne se pehle chale ga middleware ha chahe jitne bhi route hu har se pehle middleware chalta ha
+
+ synta:  app.use(function(req,res,next){
+    console.log("hello");
+    next(); // we use next() bcz after running middleware we ask him to go for next (the route)
+ });
