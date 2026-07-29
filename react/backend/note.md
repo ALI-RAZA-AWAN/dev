@@ -30,9 +30,25 @@ for export we write module.exports = d; and one file only export one time
 if more than one data then module.exports = {first:a, second:b;}
 for import we write const d= require('./filename')
 
-### v8 engine code has the power to create server not the js itself
+### V8 engine code has the power to create server not the js itself
 first the code of c++ extract from google chrome engine so we cant write code in js instead of c++ to tackle this problem the man wrap the c++ code with js so now our code first goes to js then it convert into c++ and send to that c++ code of v8 engine.
 
 so now if this c++ and js code combine then this will be called Nodejs.
 
 ## run any file js in backend ' node ./filename ' in terminal
+
+## express
+framework for nodejs
+usecase => routing => diff urls
+
+types of route : get, post, put, delete, patch
+
+const express = require('express')
+const app = express()
+
+app
+app.get('/', function(req,res){
+    res.send('hello world')
+})
+
+app.listen(3000);
