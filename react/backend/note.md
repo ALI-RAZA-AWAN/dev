@@ -23,3 +23,16 @@ Port numbers identify services: Each application listens on a specific port, so 
 IP + Port + Protocol = Socket: This combination ensures that network traffic is delivered precisely to the right process on the right device.
 
 #### Ports act like entry doors for data — the IP brings the data to the device, and the port directs it to the correct application.
+
+
+## import and export
+for export we write module.exports = d; and one file only export one time
+if more than one data then module.exports = {first:a, second:b;}
+for import we write const d= require('./filename')
+
+### v8 engine code has the power to create server not the js itself
+first the code of c++ extract from google chrome engine so we cant write code in js instead of c++ to tackle this problem the man wrap the c++ code with js so now our code first goes to js then it convert into c++ and send to that c++ code of v8 engine.
+
+so now if this c++ and js code combine then this will be called Nodejs.
+
+## run any file js in backend ' node ./filename ' in terminal
