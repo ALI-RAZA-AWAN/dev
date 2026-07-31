@@ -62,8 +62,53 @@ you don't restart the server after changes. if gives error then write npx at sta
  ek esa function ha jo kisi bhi route se pehle chalta ha jiska maqsad ap ka route chalne se pehle agar ap koi kam karana chahate hu tu woh chale ga
  jese route pe chalne se pehle print karo or sath mai hit counter increase karo
  ### yehni jo route chalne se pehle chale ga middleware ha chahe jitne bhi route hu har se pehle middleware chalta ha
-
+make more than 1 middlewares as much you want
  synta:  app.use(function(req,res,next){
     console.log("hello");
     next(); // we use next() bcz after running middleware we ask him to go for next (the route)
  });
+
+ 
+ ### NODE VS EXPRESS 
+ node is the main thing express ke code se hum server ka code likhte ha or server kaise react karega
+
+ ### what is expressjs 
+ package, routing
+
+ ### why express js 
+ http in nodejs is difficult to use, express make it easier 
+
+ ### routing
+ routes banane ke process ko hm kehte ha routing
+/profile
+/home
+/contact
+
+profile/ali
+profile/umar
+profile/shani
+
+here some common and the last part changes so here come Dynamic routing
+
+profile/:var   here you write parameter you write colon and var name 
+
+to make any route dynamic you use colon : and to get that we use backtick ` ` and write ${} in that like `${req.params.var}`
+
+### template engines
+ejs is html with superpower like you do calculations
+
+1) npm i ejs
+2) configure it
+ app.set("view engine","ejs");
+3) ek views folder
+4) ejs files banao
+5) send ki jagah render karo
+
+<%= age %>  
+
+### to setup static files
+
+1) create folder called public
+2) create folders inside it images, stylesheet, js whatever you want
+3) configure express static
+4) understand the path
