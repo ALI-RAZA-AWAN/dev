@@ -120,3 +120,4 @@ used for popup messages a web where it gives you the code
 
 ## context API 
 which is used to centralized the data so everybody get data 
+
