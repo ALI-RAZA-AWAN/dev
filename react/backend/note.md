@@ -119,3 +119,7 @@ also if you are in folder and you wanna in another folder then you first getout 
 so then you write "../images" now you go from that folder to images folder in public folder
 but here you define the static files path so write "/images"
 4) understand the path
+
+
+## error landling
+use documentation
