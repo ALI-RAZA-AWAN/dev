@@ -103,6 +103,8 @@ ejs is html with superpower like you do calculations
 3) ek views folder
 4) ejs files banao
 5) send ki jagah render karo
+app.get('/', function(req, res){
+    res.render("index");
 
 <%= age %>  
 
@@ -110,5 +112,10 @@ ejs is html with superpower like you do calculations
 
 1) create folder called public
 2) create folders inside it images, stylesheet, js whatever you want
-3) configure express static
+3) configure express static in index.js file  
+app.use(express.static("./public"));   when you write this then dont write path ./public/images 
+you just write /images 
+also if you are in folder and you wanna in another folder then you first getout from that folder
+so then you write "../images" now you go from that folder to images folder in public folder
+but here you define the static files path so write "/images"
 4) understand the path
