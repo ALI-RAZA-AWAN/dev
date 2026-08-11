@@ -26,7 +26,19 @@ app.get("/alluser",async function(req,res){
   const allusers =await userScehma.find();
   res.send(allusers);
 })
-
+app.get("/userwithoutinsensitive",async function(req,res){
+  const user= await userScehma.find({username:"AliRaza"});
+  res.send(user);
+})
+app.get("/userwithinsensitive",async function(req,res){
+  var regex =new RegExp("aliraza",'i') 
+  const user= await userScehma.find({username:regex});
+  res.send(user);
+})
+app.get("/userwithcat",async function(req,res){
+  const user = await userScehma.find({categories:'battery'});
+  res.send(user);
+})
 // app.set("view engine","ejs");
 // app.use(function(req,res,next){
 //     next();

@@ -176,6 +176,29 @@ res.send(deletduser);
 });
 
 
+### to find specific
+app.get("/user",async function(req,res){
+  const user= await userScehma.find({username:"AliRaza"});
+  res.send(user);
+})
+
+### to do incase sensitive 
+we use regular expression
+var regex =new RegExp(serach,flags) -> ("ALi",'i');
+let user = await userModel.find({username: regex})
+
+### problem with that
+it give all the users which contain that ali or Ali 
+anywhere in that name so to solve that problem
+
+## ^ shurh ese ho
+## $ khatam ese ho
+write if exact ali required regex("^ali$",'i')
+
+### specif categories users
+userScehma.find({categories:'battery'});
+userScehma.find({categories:{$all:['battery']}});
+
 ## client and server
 
 client-> cookies (cookies used to save data at frontend, browser)
@@ -207,3 +230,6 @@ bcz cookies are on browser not backend so req used to trvel from front to back a
 
 to delete 
 res.clearCookie("age");  
+
+### authentication and authorization
+
