@@ -123,3 +123,87 @@ but here you define the static files path so write "/images"
 
 ## error landling
 use documentation
+
+
+### setup 
+express js i
+express js boilerplate code
+     means create the server and route
+express js ejs setup
+         setview and makefolder and create ejs files and render
+express static files setup
+architecture of public folder
+
+
+### database
+
+const mongoose = require("mongoose");
+mongoose.connect("mongodb://127.0.0.1:27017/dbname");
+
+// schema create
+const userSchema = mongoose.Schema({
+    username: string,
+    name: String,
+    age : Number
+})
+
+module.exports = mongoose.model("nam",schema) -> mongoose.model("user", userschema);
+
+now require in index.js
+const userModel = require ("./user")
+
+app.get("/create", async function(req,res){
+   const userCreated= await userModel.create({
+        username:"Ali",
+        age: 25,
+        name:"Ali"
+    })
+    res.send(userCreated);
+})
+
+app.get("/users",async function(req,res){
+    let allusers=await userModel.find();
+    res.send(alluser)
+
+    if you gonna find specific then
+    userModel.findOne({username:"Ali"});
+
+})
+
+app.delete("/delete",async function(req,res){
+    let deleteduser =  await userModel.findOneAnd Delete({username:"Ali"});
+res.send(deletduser);
+});
+
+
+## client and server
+
+client-> cookies (cookies used to save data at frontend, browser)
+
+server-> session (session used to save data at server)
+
+## session creation
+first i package express-session
+then app.use in app.js
+then in index.js
+make route and write req.session.ban=true;  -> req.session.value=value;
+res.render("index");
+
+then make any route to fetch that like console.log(req.session);
+to delete write route and req.session.destroy(function(err){
+    if(err) throw err;
+    res.send("removed")
+ })
+after retart server the session value reset.
+
+
+## cookies creation
+package cookiesparser
+route.get("route",function(){res.cookies("age",25);
+res.send("index")})
+
+to read that cookies write console.log(req.cookies) or if specific then req.cookies.age
+bcz cookies are on browser not backend so req used to trvel from front to back and res used from back to front.
+
+to delete 
+res.clearCookie("age");  
