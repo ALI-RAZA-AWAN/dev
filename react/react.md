@@ -137,3 +137,21 @@ const fetchdata = async () => {
 
 ### to add data
 
+const handleAddTask = async (e) => {
+  e.preventDefault();
+
+  // Step A: Send POST request with data
+  const res = await fetch('http://localhost:3000/tasks', {
+    method: 'POST',                                   // Tell Express this is a POST request
+    headers: { 'Content-Type': 'application/json' }, // Tell Express "I am sending JSON data"
+    body: JSON.stringify({ title: inputTitle })       // Turn JS object into JSON string to send
+  });
+
+  // Step B: Express returns the new saved task object (with its _id)
+  const newTask = await res.json(); 
+
+  // Step C: Add the new task to our existing array in state
+  setTasks([...tasks, newTask]); 
+  setTitle(""); // Clear input box
+};
+
