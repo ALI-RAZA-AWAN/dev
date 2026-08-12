@@ -121,3 +121,19 @@ used for popup messages a web where it gives you the code
 ## context API 
 which is used to centralized the data so everybody get data 
 
+
+
+### fetch activity
+const fetchdata = async () => {
+  Step A: Send GET request to Express
+  const res = await fetch('http://localhost:3000/tasks'); 
+  
+   Step B: Convert the raw response string into a JS Array
+  const data = await res.json(); 
+  
+   Step C: Store it in React state so the UI renders it
+  setTasks(data); 
+};
+
+### to add data
+
