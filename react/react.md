@@ -155,3 +155,27 @@ const handleAddTask = async (e) => {
   setTitle(""); // Clear input box
 };
 
+### toggle task
+const handleToggleTask = async (id) => {
+  // Step A: Send PUT request targeting the specific URL ID
+  const res = await fetch(`http://localhost:3000/tasks/${id}`, {
+    method: 'PUT'
+  });
+
+  // Step B: Get updated task back from Express
+  const updatedTask = await res.json();
+
+  // Step C: Update state by swapping the old task with the updated task
+  setTasks(tasks.map(task => (task._id === id ? updatedTask : task)));
+};
+
+### delete task
+const handleDeleteTask = async (id) => {
+  // Step A: Send DELETE request with ID in the URL
+  await fetch(`http://localhost:3000/tasks/${id}`, {
+    method: 'DELETE'
+  });
+
+  // Step B: Remove that task from state instantly so it disappears from screen
+  setTasks(tasks.filter(task => task._id !== id));
+};
