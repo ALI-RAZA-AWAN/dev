@@ -179,3 +179,12 @@ const handleDeleteTask = async (id) => {
   // Step B: Remove that task from state instantly so it disappears from screen
   setTasks(tasks.filter(task => task._id !== id));
 };
+
+## req.params      
+carry in request which come from URL and use it to get specific data
+using colon like /:id
+
+## req.body
+carry in req come from frontend and using app.use(express.json())
+req.body.title
+
